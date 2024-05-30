@@ -1,9 +1,28 @@
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import { StyleSheet, View, Text, TextInput, Image, ScrollView, TouchableOpacity } from 'react-native';
+import { StyleSheet, View, Text, TextInput, Image, FlatList, TouchableOpacity, ScrollView } from 'react-native';
+import CategoryCard from './components/CategoryCard';
+import TaskItem from './components/TaskItem';import { Ionicons } from '@expo/vector-icons';
+
 
 const Stack = createStackNavigator();
+
+const categories = [
+  { title: 'Exercise', tasks: 12, image: require('./assets/Images/exercise.png') },
+  { title: 'Study', tasks: 12, image: require('./assets/Images/read.png') },
+  { title: 'Code', tasks: 8, image: require('./assets/Images/code.png') },
+  { title: 'Cook', tasks: 5, image: require('./assets/Images/cook.png') },
+  { title: 'Cycling', tasks: 7, image: require('./assets/Images/cycling.png') },
+  { title: 'Teaching Hours', tasks: 4, image: require('./assets/Images/teach.png') },
+  { title: 'Travel & Tour', tasks: 3, image: require('./assets/Images/travel.png') },
+  { title: 'Health Care', tasks: 6, image: require('./assets/Images/health.png') },
+];
+
+const tasks = [
+  'Mobile App Development',
+
+];
 
 function HomeScreen() {
   return (
@@ -11,41 +30,36 @@ function HomeScreen() {
       <View style={styles.header}>
         <View>
           <Text style={styles.headerTitle}>Hello, Devs</Text>
-          <Text style={styles.headerSubtitle}>14 tasks today</Text>
+          <Text style={styles.headerSubtitle}>14 Tasks Today</Text>
         </View>
-        <Image style={styles.profileImage} source={require('./assets/favicon.png')} />
+        <Image style={styles.profileImage} source={require('./assets/Images/user.png') } />
       </View>
-      
+
       <View style={styles.searchContainer}>
-        <TextInput style={styles.searchInput} placeholder="Search" />
-        <TouchableOpacity style={styles.filterButton}>
-          <Text>⚙️</Text>
-        </TouchableOpacity>
+        <Ionicons name="search" size={24} color="black" style={styles.searchIcon} />
+        <TextInput  style={styles.searchInput} placeholder="Search"/>
+        <TouchableOpacity style={styles.filterButton}></TouchableOpacity>
       </View>
-      
+
       <Text style={styles.sectionTitle}>Categories</Text>
-      
       <View style={styles.categories}>
-        <View style={styles.category}>
-          <Image style={styles.categoryImage} source={require('./assets/favicon.png')} />
-          <Text style={styles.categoryTitle}>Exercise</Text>
-          <Text style={styles.categoryTasks}>12 Tasks</Text>
-        </View>
-        <View style={styles.category}>
-          <Image style={styles.categoryImage} source={require('./assets/favicon.png')} />
-          <Text style={styles.categoryTitle}>Study</Text>
-          <Text style={styles.categoryTasks}>12 Tasks</Text>
-        </View>
+        {categories.map((category, index) => (
+          <CategoryCard 
+            key={index}
+            title={category.title}
+            tasks={category.tasks}
+            image={category.image}
+          />
+        ))}
       </View>
-      
+
       <Text style={styles.sectionTitle}>Ongoing Task</Text>
-      
-      <View style={styles.task}>
-        <Text style={styles.taskTitle}>Mobile App Development</Text>
-      </View>
-      <View style={styles.task}>
-        <Text style={styles.taskTitle}>Web Development</Text>
-      </View>
+      <FlatList
+        data={tasks}
+        renderItem={({ item }) => <TaskItem title={item} />}
+        keyExtractor={(item, index) => index.toString()}
+        contentContainerStyle={styles.flatListContent}
+      />
     </ScrollView>
   );
 }
@@ -61,6 +75,23 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
+  searchContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#FFF',
+    borderRadius: 8,
+    paddingVertical: 8,
+    paddingHorizontal: 16,
+  },
+  searchIcon: {
+    width: 20,
+    height: 20,
+    marginRight: 8,
+  },
+  searchText: {
+    fontSize: 16,
+    color: '#333',
+  },
   container: {
     flex: 1,
     backgroundColor: '#FAF3EB',
@@ -71,10 +102,12 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
     marginTop: 16,
+    marginBottom: 16,
   },
   headerTitle: {
     fontSize: 28,
     fontWeight: 'bold',
+    color: '#333',
   },
   headerSubtitle: {
     fontSize: 16,
@@ -98,52 +131,31 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     paddingHorizontal: 16,
     marginRight: 8,
+    borderWidth: 1,
+    borderColor: '#fff',
   },
   filterButton: {
     width: 40,
     height: 40,
-    backgroundColor: '#FF6B6B',
+    backgroundColor: '#FFF',
     borderRadius: 8,
     justifyContent: 'center',
     alignItems: 'center',
+    borderWidth: 1,
+    borderColor: '#DDD',
   },
   sectionTitle: {
     fontSize: 22,
     fontWeight: 'bold',
+    color: '#333',
     marginVertical: 16,
   },
   categories: {
     flexDirection: 'row',
+    flexWrap: 'wrap',
     justifyContent: 'space-between',
   },
-  category: {
-    width: '48%',
-    backgroundColor: '#FFF',
-    borderRadius: 8,
-    padding: 16,
-    alignItems: 'center',
-  },
-  categoryImage: {
-    width: 100,
-    height: 100,
-    marginBottom: 8,
-  },
-  categoryTitle: {
-    fontSize: 18,
-    fontWeight: 'bold',
-  },
-  categoryTasks: {
-    fontSize: 14,
-    color: '#666',
-  },
-  task: {
-    backgroundColor: '#FFF',
-    borderRadius: 8,
-    padding: 16,
-    marginVertical: 8,
-  },
-  taskTitle: {
-    fontSize: 18,
-    fontWeight: 'bold',
+  flatListContent: {
+    paddingBottom: 16,
   },
 });
