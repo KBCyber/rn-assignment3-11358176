@@ -17,6 +17,8 @@ const styles = StyleSheet.create({
     marginVertical: 8,
     borderWidth: 1,
     borderColor: '#EEE',
+    paddingTop: 50,
+    paddingBottom: 50,
   },
   title: {
     fontSize: 18,

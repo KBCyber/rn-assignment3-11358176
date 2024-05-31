@@ -21,7 +21,8 @@ const categories = [
 
 const tasks = [
   'Mobile App Development',
-
+  'Web Development',
+  'A'
 ];
 
 function HomeScreen() {
@@ -75,20 +76,22 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-  searchContainer: {
+ searchContainer: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#FFF',
+    backgroundColor: '#0ff',
     borderRadius: 8,
-    paddingVertical: 8,
     paddingHorizontal: 16,
+    marginTop: 8,
+    marginBottom: 16,
   },
   searchIcon: {
-    width: 20,
-    height: 20,
-    marginRight: 8,
+    marginLeft: 1,
+    marginRight: 10,
+    padding: 2,
   },
-  searchText: {
+  searchInput: {
+    flex: 1,
     fontSize: 16,
     color: '#333',
   },
@@ -145,10 +148,11 @@ const styles = StyleSheet.create({
     borderColor: '#DDD',
   },
   sectionTitle: {
-    fontSize: 22,
+    fontSize: 27,
     fontWeight: 'bold',
     color: '#333',
-    marginVertical: 16,
+    marginTop: 15,
+    marginBottom: 2,
   },
   categories: {
     flexDirection: 'row',
