@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-const TaskItem = ({ title }) => {
+const OngoingTask = ({ title }) => {
   return (
     <View style={styles.item}>
       <Text style={styles.title}>{title}</Text>
@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
     padding: 16,
     marginVertical: 8,
     borderWidth: 1,
-    borderColor: '#EEE',
+    borderColor: '#E8D1BA',
     paddingTop: 50,
     paddingBottom: 50,
   },
@@ -27,4 +27,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default TaskItem;
+export default OngoingTask;
