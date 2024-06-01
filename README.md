@@ -47,43 +47,6 @@ The main component that sets up navigation and includes the `HomeScreen`.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### `HomeScreen` and `Categories`
-<img src="/myProjectWork3/assets/Images/Screenshot_20240601_132910_Expo%20Go.jpg" alt="Home Screen" width="150"/>
-
-### `HomeScreen` and `Categories`
-![Home Screen and Categories](<myProjectWork3/assets/Images/Screenshot_20240601_132922_Expo Go.jpg>)
-
-### This is just more of the `Categories`
-![More of Categories](/myProjectWork3/assets/Images/Screenshot_20240601_132928_Expo%20Go.jpg)
-
-### Another one `Categories`
-![More of Categories](/myProjectWork3/assets/Images/Screenshot_20240601_132932_Expo%20Go.jpg)
-
-### This is `OngoingTasks`
-![Ongoing Tasks](/myProjectWork3/assets/Images/Screenshot_20240601_132939_Expo%20Go.jpg)
-
-###  More of the `Categories`
-![More of Ongoing Tasks](/myProjectWork3/assets/Images/Screenshot_20240601_132943_Expo%20Go.jpg)
-
-
 ## Installation Process & Set-up for this TO-DO `App`
 
 1. Clone the repository.
