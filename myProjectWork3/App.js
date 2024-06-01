@@ -9,8 +9,8 @@ import TaskItem from './components/OngoingTask';import { Ionicons } from '@expo/
 const Stack = createStackNavigator();
 
 const categories = [
-  { title: 'Exercise', tasks: 12, image: require('./assets/Images/exercise.png') },
-  { title: 'Study', tasks: 12, image: require('./assets/Images/read.png') },
+  { title: 'Exercise', tasks: 12, image: require('./assets/Images/exercise1.png') },
+  { title: 'Study', tasks: 12, image: require('./assets/Images/study1.png') },
   { title: 'Code', tasks: 8, image: require('./assets/Images/code.png') },
   { title: 'Cook', tasks: 5, image: require('./assets/Images/cook.png') },
   { title: 'Cycling', tasks: 7, image: require('./assets/Images/cycling.png') },
