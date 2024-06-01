@@ -37,6 +37,8 @@ The main component that sets up navigation and includes the `HomeScreen`.
 
 ### `HomeScreen` and `Categories`
   <img src="myProjectWork3/assets/Images/Screenshot_20240601_132922_Expo Go.jpg" alt="Categories" width="220"/>
+
+### This is just more of the `Categories`
   <img src="myProjectWork3/assets/Images/Screenshot_20240601_132928_Expo Go.jpg" alt="Ongoing Tasks" width="220"/>
   <img src="myProjectWork3/assets/Images/Screenshot_20240601_132932_Expo Go.jpg" alt="Categories" width="220"/>
   <img src="myProjectWork3/assets/Images/Screenshot_20240601_132939_Expo Go.jpg" alt="Ongoing Tasks" width="220"/>
