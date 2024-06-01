@@ -15,7 +15,7 @@ const CategoryCard = ({ title, tasks, image }) => {
 
 const styles = StyleSheet.create({
   card: {
-    width: 160,
+    width: 180,
     backgroundColor: '#FFF',
     borderRadius: 15,
     padding: 16,

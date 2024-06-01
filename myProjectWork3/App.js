@@ -9,8 +9,8 @@ import { Ionicons } from '@expo/vector-icons';
 const Stack = createStackNavigator();
 
 const categories = [
-  { id: '1', title: 'Exercise', tasks: 12, image: require('./assets/Images/exercise1.png') },
-  { id: '2', title: 'Study', tasks: 12, image: require('./assets/Images/study1.png') },
+  { id: '1', title: 'Exercise', tasks: 12, image: require('./assets/Images/exercise.png') },
+  { id: '2', title: 'Study', tasks: 12, image: require('./assets/Images/study.png') },
   { id: '3', title: 'Code', tasks: 10, image: require('./assets/Images/code.png') },
   { id: '4', title: 'Cook', tasks: 8, image: require('./assets/Images/cook.png') },
   { id: '5', title: 'Cycling', tasks: 11, image: require('./assets/Images/cycling.png') },
