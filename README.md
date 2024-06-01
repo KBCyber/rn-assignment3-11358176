@@ -29,9 +29,12 @@ The main component that sets up navigation and includes the `HomeScreen`.
 
 ## Screenshots
 
-![Home Screen](myProjectWork3/assets/Images/Screenshot_20240601_132910_Expo Go.jpg)
-![Categories]()
-![Ongoing Tasks]()
+![Home Screen & Categories](/myProjectWork3/assets/Images/Screenshot_20240601_132910_Expo%20Go.jpg)
+![Home Screen and Categories](<myProjectWork3/assets/Images/Screenshot_20240601_132922_Expo Go.jpg>)
+![More of Categories](/myProjectWork3/assets/Images/Screenshot_20240601_132928_Expo%20Go.jpg)
+![More of Categories](/myProjectWork3/assets/Images/Screenshot_20240601_132932_Expo%20Go.jpg)
+![Ongoing Tasks](/myProjectWork3/assets/Images/Screenshot_20240601_132939_Expo%20Go.jpg)
+![More of Ongoing Tasks](/myProjectWork3/assets/Images/Screenshot_20240601_132943_Expo%20Go.jpg)
 
 ## Installation
 
