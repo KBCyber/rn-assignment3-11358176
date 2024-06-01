@@ -30,8 +30,6 @@ The main component that sets up navigation and includes the `HomeScreen`.
 ## Screenshots
 
 ### `HomeScreen` and `Categories`
-![Home Screen & Categories](/myProjectWork3/assets/Images/Screenshot_20240601_132910_Expo%20Go.jpg)
-
 <img src="/myProjectWork3/assets/Images/Screenshot_20240601_132910_Expo%20Go.jpg" alt="Home Screen" width="150"/>
 
 ### `HomeScreen` and `Categories`
