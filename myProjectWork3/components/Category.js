@@ -1,13 +1,13 @@
 import React from 'react';
 import { View, Text, Image, StyleSheet } from 'react-native';
 
-const Category = ({ title, tasks, image }) => {
+const CategoryCard = ({ title, tasks, image }) => {
   return (
     <View style={styles.card}>
       <View style={styles.main}>
-          <Text style={styles.title}>{title}</Text>
-          <Text style={styles.tasks}>{tasks} Tasks</Text>
-          <Image source={image} style={styles.images} resizeMode="contain" />
+        <Text style={styles.title}>{title}</Text>
+        <Text style={styles.tasks}>{tasks} Tasks</Text>
+        <Image source={image} style={styles.images} resizeMode="contain" />
       </View>
     </View>
   );
@@ -15,16 +15,17 @@ const Category = ({ title, tasks, image }) => {
 
 const styles = StyleSheet.create({
   card: {
-    width: '48%',
+    width: 160,
     backgroundColor: '#FFF',
     borderRadius: 15,
     padding: 16,
     marginBottom: 16,
+    marginRight: 16,
     alignItems: 'center',
-    justifyContent: 'left',
+    justifyContent: 'center',
   },
   images: {
-    width: 140,
+    width: 130,
     height: 100,
     marginBottom: 1,
   },
@@ -37,7 +38,7 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: '#000',
   },
-  main:{}
+  main: {}
 });
 
-export default Category;
+export default CategoryCard;
