@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
   card: {
     width: '48%',
     backgroundColor: '#FFF',
-    borderRadius: 8,
+    borderRadius: 15,
     padding: 16,
     marginBottom: 16,
     alignItems: 'center',
@@ -29,13 +29,13 @@ const styles = StyleSheet.create({
     marginBottom: 1,
   },
   title: {
-    fontSize: 20,
+    fontSize: 16,
     fontWeight: 'bold',
-    color: '#333',
+    color: '#000',
   },
   tasks: {
     fontSize: 14,
-    color: '#666',
+    color: '#000',
   },
   main:{}
 });

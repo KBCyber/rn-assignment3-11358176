@@ -12,7 +12,7 @@ const OngoingTask = ({ title }) => {
 const styles = StyleSheet.create({
   item: {
     backgroundColor: '#FFF',
-    borderRadius: 8,
+    borderRadius: 15,
     padding: 16,
     marginVertical: 8,
     borderWidth: 1,
@@ -21,9 +21,9 @@ const styles = StyleSheet.create({
     paddingBottom: 50,
   },
   title: {
-    fontSize: 18,
+    fontSize: 16,
     fontWeight: 'bold',
-    color: '#333',
+    color: '#000',
   },
 });
 

@@ -49,12 +49,10 @@ function HomeScreen() {
       </View>
 
       <View style={styles.searchContainer}>
-      <TextInput style={styles.searchInput} placeholder="Search">
-        <Ionicons name="search" size={24} color="gray" style={styles.searchIcon}/>
-        <Text style={styles.headerSubtitle}>Search</Text>
-      </TextInput>
+      <Ionicons name="search" size={24} color="black" style={styles.searchIcon}/>
+      <TextInput style={styles.searchInput} placeholder="Search"/>
       
-        <TouchableOpacity style={styles.filterButton}><Ionicons bac name="options" size={24} color="white" /></TouchableOpacity>
+        <TouchableOpacity style={styles.filterButton}><Ionicons name="options" size={24} color="white" /></TouchableOpacity>
       </View>
 
       <Text style={styles.sectionTitle}>Categories</Text>
@@ -102,22 +100,18 @@ const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
-    backgroundColor: '#FAF3EB',
+    backgroundColor: '#F7F0E8',
     padding: 16,
   },
   searchInput: {
     borderWidth: 1,
     borderColor: 'black',
-    borderRadius: 5,
+    borderRadius: 14,
     paddingLeft: 30,
     position: 'relative',
   },
   searchIcon: {
-    position: 'absolute',
-    top: '50%',
-    left: 5,
-    transform: [{ translateY: -12 }],
-    marginTop: 200,
+    marginRight: 10,
   },
 
   header: {
@@ -128,13 +122,13 @@ const styles = StyleSheet.create({
     marginBottom: 16,
   },
   headerTitle: {
-    fontSize: 28,
+    fontSize: 32,
     fontWeight: 'bold',
-    color: '#333',
+    color: '#000',
   },
   headerSubtitle: {
     fontSize: 16,
-    color: '#666',
+    color: '#000',
     marginTop: 4,
   },
   profileImage: {
@@ -151,7 +145,7 @@ const styles = StyleSheet.create({
     flex: 1,
     height: 40,
     backgroundColor: '#FFF',
-    borderRadius: 8,
+    borderRadius: 14,
     paddingHorizontal: 16,
     marginRight: 8,
     borderWidth: 1,
@@ -161,16 +155,16 @@ const styles = StyleSheet.create({
     width: 40,
     height: 40,
     backgroundColor: '#F0522F',
-    borderRadius: 8,
+    borderRadius: 12,
     justifyContent: 'center',
     alignItems: 'center',
     borderWidth: 1,
     borderColor: '#fff',
   },
   sectionTitle: {
-    fontSize: 27,
+    fontSize: 22,
     fontWeight: 'bold',
-    color: '#333',
+    color: 'black',
     marginTop: 15,
     marginBottom: 2,
   },
